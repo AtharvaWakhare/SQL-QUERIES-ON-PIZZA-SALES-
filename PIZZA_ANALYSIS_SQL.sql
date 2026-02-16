@@ -1,4 +1,4 @@
-
+CREATE DATABASE Pizza_Project
 
 USE Pizza_Project
 
@@ -91,4 +91,5 @@ SELECT * FROM pizza_sales
 
 
 SELECT DATENAME(DW,order_date) AS MONTHS , CAST( SUM(total_price)AS decimal(10,2)) AS TOTAL_REVENUE FROM pizza_sales
+
 GROUP BY DATENAME(DW,order_date)
